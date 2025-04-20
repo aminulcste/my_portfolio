@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #343a40;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+}
+
+footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}

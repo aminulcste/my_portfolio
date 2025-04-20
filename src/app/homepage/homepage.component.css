@@ -1,0 +1,70 @@
+.homepage {
+  padding: 60px 15px;
+  background: linear-gradient(to right, #f0f8ff, #e6f0ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.homepage h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.homepage h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.homepage p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Animation */
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .homepage h1 {
+    font-size: 2rem;
+  }
+
+  .homepage h3 {
+    font-size: 1.2rem;
+  }
+
+  .homepage p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage {
+    padding: 40px 10px;
+  }
+
+  .homepage h1 {
+    font-size: 1.8rem;
+  }
+
+  .homepage h3 {
+    font-size: 1rem;
+  }
+
+  .homepage p {
+    font-size: 0.9rem;
+  }
+}

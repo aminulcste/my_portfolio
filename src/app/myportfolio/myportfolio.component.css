@@ -1,0 +1,57 @@
+/* Container to center everything */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh; /* Take full viewport height */
+}
+
+/* Typing Effect */
+.typing-effect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #000; /* Cursor effect */
+  width: 0; /* Initial width */
+  animation: typing 3s steps(30) 1s 1 normal both, blink 0.75s step-end infinite, cursor-off 3.1s forwards;
+  text-align: center; /* Ensures text is centered */
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blink animation for the typing cursor */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Hide cursor after typing is finished */
+@keyframes cursor-off {
+  to {
+    border-color: transparent; /* Remove the cursor after typing */
+  }
+}
+
+/* Optional styling for the heading */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center; /* Ensures text is centered inside the element */
+}
+
+/* Styling for other sections */
+section {
+  width: 100%;
+  margin-bottom: 2rem;
+}
