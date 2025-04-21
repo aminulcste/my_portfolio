@@ -11,7 +11,7 @@ export class ProjectsComponent {
     {
       title: 'My Portfolio',
       description: 'My Portfolio Using Angular',
-      link: 'https://github.com/aminulcste/aminul_port_folio'
+      link: 'https://github.com/aminulcste/my_portfolio'
     },
     {
       title: 'Simple Employee Portal',
