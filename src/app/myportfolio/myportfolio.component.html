@@ -5,6 +5,10 @@
   <!-- About Me Section -->
   <section class="mb-5 p-4 bg-light rounded shadow-sm">
     <app-about-me></app-about-me>
+    <!-- CV Button -->
+    <div class="text-center mt-4">
+      <a href="path-to-your-cv.pdf" class="btn btn-primary" download>Download My CV</a>
+    </div>
   </section>
 
   <!-- Skills Section -->
@@ -22,3 +26,30 @@
     <app-contact></app-contact>
   </section>
 </div>
+
+<!-- Responsive layout adjustments with Bootstrap classes -->
+<style>
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    section {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    section {
+      padding: 15px;
+    }
+  }
+</style>
